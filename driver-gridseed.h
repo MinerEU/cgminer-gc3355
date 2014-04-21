@@ -38,7 +38,7 @@ typedef struct s_gridseed_info {
 	enum sub_ident	ident;
 	uint32_t	fw_version;
 	struct timeval	scanhash_time;
-	int		nonce_count[8];  // per chip
+	int		nonce_count[GRIDSEED_MAX_CHIPS];  // per chip
 	int		error_count[8];  // per chip
 	char		*serial;
 	// options
